@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider, makeStyles } from "@material-ui/core/styles";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import Grid from "./components/Grid";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -61,7 +61,7 @@ function App() {
    return (
       <div className="App">
          <ThemeProvider theme={theme}>
-            <NavBar />
+            {/* <NavBar /> */}
             <div className={classes.wrapper}>
                <Typography variant="h4" className={classes.bigSpace} color="primary">
                   At Rocket.io we are passionate about software
