@@ -5,6 +5,7 @@ import nourIcon from "./nourIcon.jpg";
 import starIcon from "./Star.png";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import { useMediaQuery } from "react-responsive";
 
 import "./App.css";
 
@@ -61,12 +62,7 @@ const theme = createTheme({
 
 const styles = makeStyles({
    wrapper: {
-      // width: "80%",
-      // margin: "auto",
       margin: "1.5%",
-      // padding: "2%",
-      // textAlign: "center",
-      // border: "2px solid #00BFFF",
    },
    wrapperOne: {
       border: "2px solid #00BFFF",
@@ -89,9 +85,6 @@ const styles = makeStyles({
    logo: {
       width: "25%",
       height: "25%",
-      "@media (max-width:780px)": {
-         display: "none",
-      },
    },
    italic: {
       marginLeft: "50",
@@ -112,7 +105,7 @@ const styles = makeStyles({
       marginTop: "2%",
    },
    numbers: {
-      width: "20rem",
+      minWidth: "20rem",
    },
    txtNextToNums: {
       flex: 1,
@@ -124,6 +117,13 @@ const styles = makeStyles({
 function App() {
    const classes = styles();
 
+   const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+   if (isMobile) {
+      document.body.style.zoom = 0.5;
+   } else {
+      document.body.style.zoom = 1;
+   }
    return (
       <div className="App">
          <ThemeProvider theme={theme}>
