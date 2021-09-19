@@ -48,7 +48,7 @@ const theme = createTheme({
       body1: {
          fontFamily: ["Open Sans"],
          fontWeight: 250,
-         fontSize: "2rem",
+         fontSize: "1.75rem",
          lineHeight: "2.5rem",
       },
       body2: {
@@ -105,11 +105,11 @@ const styles = makeStyles({
       marginTop: "2%",
    },
    numbers: {
-      minWidth: "17rem",
+      width: "15rem",
    },
    txtNextToNums: {
       flex: 1,
-      marginRight: "11rem",
+      marginRight: "10rem",
       padding: "0.5rem 0 0 0",
    },
 });
