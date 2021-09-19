@@ -112,6 +112,16 @@ const styles = makeStyles({
       marginRight: "10rem",
       padding: "0.5rem 0 0 0",
    },
+   smallStarOne: {
+      width: "2rem",
+      height: "2rem",
+      marginRight: "28rem",
+   },
+   smallStarTwo: {
+      width: "2rem",
+      height: "2rem",
+      marginLeft: "28rem",
+   },
 });
 
 function App() {
@@ -124,92 +134,112 @@ function App() {
    } else {
       document.body.style.zoom = 1;
    }
+
+   const containerOne = () => {
+      return (
+         <div className={`${classes.wrapper} ${classes.wrapperOne}`}>
+            <div className={classes.mystereHeaderContainer}>
+               <img src={starIcon} className={classes.star} alt="" />
+               <Typography
+                  display="inline"
+                  variant="h1"
+                  color={"secondary"}
+                  className={classes.mystereHeader}
+               >
+                  Mystère
+               </Typography>
+            </div>
+
+            <Typography variant="h3">Customized Fragrances Luxury Store</Typography>
+            <Typography variant="h4">
+               Creative Perfume Lab and Workshops (Themed and Private)
+            </Typography>
+            <Typography variant="h5" className={classes.littleSpace}>
+               Triple Perfumery Master degree
+            </Typography>
+            <Typography variant="h5">(Scientific, Business, Technical)</Typography>
+            <Typography variant="h5">Paris, Italy and Amsterdam's Expertise</Typography>
+            <Typography variant="h5">
+               Member of the French Society of Perfumers
+            </Typography>
+            <div className={classes.numbersContainer}>
+               <div className={classes.numbers}>
+                  <Typography
+                     variant="body1"
+                     // className={classes.number}
+                  >
+                     +33 7 67 85 55 41
+                  </Typography>
+                  <Typography variant="body1">+961 6 412 024</Typography>
+                  <Typography variant="body1">+961 81 157 395</Typography>
+               </div>
+               <div className={classes.txtNextToNums}>
+                  <Typography
+                     variant="body2"
+                     className={classes.italic}
+                     color={"primary"}
+                  >
+                     Parfumeur
+                  </Typography>
+                  <div className={classes.littleSpace} />
+
+                  <Typography variant="body2" color={"secondary"}>
+                     Nour Akoum
+                  </Typography>
+               </div>
+               <img src={starIcon} className={classes.star} alt="" />
+            </div>
+         </div>
+      );
+   };
+
+   const containerTwo = () => {
+      return (
+         <div className={`${classes.wrapper} ${classes.wrapperOne}`}>
+            <img src={nourIcon} className={classes.logo} alt="" />
+
+            <Typography variant="h4">{"Akoum & Jamal blg, Dam w Farz"}</Typography>
+            <Typography variant="h4">Tripoli, Lebanon</Typography>
+            <Typography variant="h4">nourakoumparfumeur@gmail.com</Typography>
+            <div className={`${classes.grid} ${classes.littleSpace}`}>
+               <Grid
+                  icon={
+                     <InstagramIcon
+                        style={{ fill: "#ff1493", height: "125", width: "125" }}
+                     />
+                  }
+                  title="@nourakoumparfumeur"
+               />
+               <Grid
+                  icon={
+                     <FacebookIcon
+                        style={{ fill: "#00BFFF", height: "125", width: "125" }}
+                     />
+                  }
+                  title="@nourakoumparfumeur"
+               />
+            </div>
+         </div>
+      );
+   };
    return (
       <div className="App">
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
-               <div className={`${classes.wrapper} ${classes.wrapperOne}`}>
-                  <img src={nourIcon} className={classes.logo} alt="" />
-
-                  <Typography variant="h4">{"Akoum & Jamal blg, Dam w Farz"}</Typography>
-                  <Typography variant="h4">Tripoli, Lebanon</Typography>
-                  <Typography variant="h4">nourakoumparfumeur@gmail.com</Typography>
-                  <div className={`${classes.grid} ${classes.littleSpace}`}>
-                     <Grid
-                        icon={
-                           <InstagramIcon
-                              style={{ fill: "#ff1493", height: "125", width: "125" }}
-                           />
-                        }
-                        title="@nourakoumparfumeur"
-                     />
-                     <Grid
-                        icon={
-                           <FacebookIcon
-                              style={{ fill: "#00BFFF", height: "125", width: "125" }}
-                           />
-                        }
-                        title="@nourakoumparfumeur"
-                     />
-                  </div>
+               <img src={starIcon} className={classes.smallStarOne} alt="" />
+               <div>
+                  <Typography display="inline" variant="body2" color={"secondary"}>
+                     {"Nour Akoum "}
+                  </Typography>
+                  <Typography display="inline" variant="body2" color={"primary"}>
+                     Parfumeur
+                  </Typography>
                </div>
+               <img src={starIcon} className={classes.smallStarTwo} alt="" />
+
+               {containerOne()}
                <div className={classes.bigSpace} />
-
-               <div className={`${classes.wrapper} ${classes.wrapperOne}`}>
-                  <div className={classes.mystereHeaderContainer}>
-                     <img src={starIcon} className={classes.star} alt="" />
-                     <Typography
-                        display="inline"
-                        variant="h1"
-                        color={"secondary"}
-                        className={classes.mystereHeader}
-                     >
-                        Mystère
-                     </Typography>
-                  </div>
-
-                  <Typography variant="h3">Customized Fragrances Luxury Store</Typography>
-                  <Typography variant="h4">
-                     Creative Perfume Lab and Workshops (Themed and Private)
-                  </Typography>
-                  <Typography variant="h5" className={classes.littleSpace}>
-                     Triple Perfumery Master degree
-                  </Typography>
-                  <Typography variant="h5">(Scientific, Business, Technical)</Typography>
-                  <Typography variant="h5">
-                     Paris, Italy and Amsterdam's Expertise
-                  </Typography>
-                  <Typography variant="h5">
-                     Member of the French Society of Perfumers
-                  </Typography>
-                  <div className={classes.numbersContainer}>
-                     <div className={classes.numbers}>
-                        <Typography
-                           variant="body1"
-                           // className={classes.number}
-                        >
-                           +33 7 67 85 55 41
-                        </Typography>
-                        <Typography variant="body1">+961 6 412 024</Typography>
-                        <Typography variant="body1">+961 81 157 395</Typography>
-                     </div>
-                     <div className={classes.txtNextToNums}>
-                        <Typography
-                           variant="body2"
-                           className={classes.italic}
-                           color={"primary"}
-                        >
-                           Parfumeur
-                        </Typography>
-                        <div className={classes.littleSpace} />
-
-                        <Typography variant="body2" color={"secondary"}>
-                           Nour Akoum
-                        </Typography>
-                     </div>
-                     <img src={starIcon} className={classes.star} alt="" />
-                  </div>
-               </div>
+               {containerTwo()}
             </div>
          </ThemeProvider>
       </div>
