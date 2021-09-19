@@ -1,21 +1,12 @@
 import { createTheme, ThemeProvider, makeStyles } from "@material-ui/core/styles";
-// import NavBar from "./components/NavBar";
+import { Typography } from "@material-ui/core";
 import Grid from "./components/Grid";
-// import Footer from "./components/Footer";
 import nourIcon from "./nourIcon.jpg";
 import starIcon from "./Star.png";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
 import "./App.css";
-
-// import SecurityIcon from "@material-ui/icons/Security";
-// import EventNoteIcon from "@material-ui/icons/EventNote";
-// import TrendingUpIcon from "@material-ui/icons/TrendingUp";
-// import ImportExportIcon from "@material-ui/icons/ImportExport";
-// import ComputerIcon from "@material-ui/icons/Computer";
-// import HttpIcon from "@material-ui/icons/Http";
-import { Typography } from "@material-ui/core";
 
 const theme = createTheme({
    palette: {
@@ -27,42 +18,42 @@ const theme = createTheme({
       },
    },
    typography: {
-      fontFamily: ["Roboto"],
+      fontFamily: ["PT Serif"],
       h1: {
          fontWeight: 800,
-         fontSize: 60,
+         fontSize: "4rem",
          lineHeight: "5.5rem",
       },
       h2: {
          fontWeight: 600,
-         fontSize: 45,
+         fontSize: "3rem",
          lineHeight: "4.5rem",
       },
       h3: {
          fontWeight: 400,
-         fontSize: 37,
+         fontSize: "2.4rem",
          lineHeight: "3.5rem",
       },
       h4: {
          fontWeight: 250,
-         fontSize: 30,
+         fontSize: "2rem",
          lineHeight: "2.5rem",
       },
       h5: {
          fontWeight: 100,
-         fontSize: 26,
+         fontSize: "1.7rem",
          lineHeight: "2rem",
       },
       body1: {
          fontFamily: ["Open Sans"],
          fontWeight: 250,
-         fontSize: 30,
+         fontSize: "2rem",
          lineHeight: "2.5rem",
       },
       body2: {
          fontFamily: ["Fleur De Leah"],
          fontWeight: 250,
-         fontSize: 45,
+         fontSize: "3rem",
          lineHeight: "2.5rem",
       },
    },
@@ -96,8 +87,8 @@ const styles = makeStyles({
       flexWrap: "wrap",
    },
    logo: {
-      width: "20%",
-      height: "20%",
+      width: "25%",
+      height: "25%",
       "@media (max-width:780px)": {
          display: "none",
       },
@@ -106,26 +97,26 @@ const styles = makeStyles({
       marginLeft: "50",
    },
    star: {
-      width: "100px",
-      height: "100px",
+      width: "6rem",
+      height: "6rem",
    },
    mystereHeaderContainer: {
       display: "flex",
    },
    mystereHeader: {
       flex: 1,
-      marginRight: "100px",
+      marginRight: "6rem",
    },
    numbersContainer: {
       display: "flex",
       marginTop: "2%",
    },
    numbers: {
-      width: 250,
+      width: "20rem",
    },
    txtNextToNums: {
       flex: 1,
-      marginRight: 150,
+      marginRight: "14rem",
       padding: "0.5rem 0 0 0",
    },
 });
