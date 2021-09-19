@@ -120,7 +120,7 @@ function App() {
    const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
    if (isMobile) {
-      document.body.style.zoom = 0.5;
+      document.body.style.zoom = 0.45;
    } else {
       document.body.style.zoom = 1;
    }
