@@ -105,11 +105,11 @@ const styles = makeStyles({
       marginTop: "2%",
    },
    numbers: {
-      minWidth: "20rem",
+      minWidth: "17rem",
    },
    txtNextToNums: {
       flex: 1,
-      marginRight: "14rem",
+      marginRight: "11rem",
       padding: "0.5rem 0 0 0",
    },
 });
