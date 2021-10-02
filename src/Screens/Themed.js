@@ -25,7 +25,7 @@ const styles = makeStyles({
    },
 });
 
-function CreativePerfumeLabs() {
+function Themed() {
    const classes = styles();
 
    const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -37,16 +37,15 @@ function CreativePerfumeLabs() {
    }
 
    return (
-      <div className="CreativePerfumeLabs">
+      <div className="Themed">
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <Typography variant="h3">
-                  A chance to get your unique signature fine fragrance that reflects your
-                  personality and creative style. Contact us to reserve your time to have
-                  a personalized meeting with our professional independent perfumer. This
-                  is the first professional perfume experience available in Lebanon.
-                  Providing high standards Fine Fragrance complexity but made especially
-                  to match your taste and personality.
+                  There are special themed workshops based on different seasons and
+                  occasions. You will get an explanation about perfumery and then explore
+                  your sense of smell with a themed focus to have an experience that is
+                  more relevant, easier and with a theme reflecting signature scent that
+                  you will get to compose through the end.
                </Typography>
             </div>
          </ThemeProvider>
@@ -54,4 +53,4 @@ function CreativePerfumeLabs() {
    );
 }
 
-export default CreativePerfumeLabs;
+export default Themed;

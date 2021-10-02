@@ -41,12 +41,21 @@ function CreativePerfumeLabs() {
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <Typography variant="h3">
-                  A chance to get your unique signature fine fragrance that reflects your
-                  personality and creative style. Contact us to reserve your time to have
-                  a personalized meeting with our professional independent perfumer. This
-                  is the first professional perfume experience available in Lebanon.
-                  Providing high standards Fine Fragrance complexity but made especially
-                  to match your taste and personality.
+                  An activity available on a regular basis upon booking a slot. A wide
+                  selection of authentic perfume raw materials present for you to smell
+                  and explore creatively. Dive into your sense of smell and see a
+                  completely different perspective on this mysterious world.
+               </Typography>
+               <Typography variant="h3">
+                  Get the chance to truly experience the complexity of a perfume by
+                  choosing your favorite scents to make your own signature scent. The
+                  session will have a focus on providing freedom of choice after smelling
+                  all different raw materials to have a selection by the end helping
+                  create your perfume with guidance of our independent perfumer. Fun,
+                  knowledgeable, Innovative, Creative and a Unique activity.
+               </Typography>
+               <Typography variant="h3">
+                  Hurry up and join us in our only perfume Lab open for public in the MEA.
                </Typography>
             </div>
          </ThemeProvider>

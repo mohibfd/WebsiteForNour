@@ -25,7 +25,7 @@ const styles = makeStyles({
    },
 });
 
-function CreativePerfumeLabs() {
+function Private() {
    const classes = styles();
 
    const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -37,16 +37,17 @@ function CreativePerfumeLabs() {
    }
 
    return (
-      <div className="CreativePerfumeLabs">
+      <div className="Private">
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <Typography variant="h3">
-                  A chance to get your unique signature fine fragrance that reflects your
-                  personality and creative style. Contact us to reserve your time to have
-                  a personalized meeting with our professional independent perfumer. This
-                  is the first professional perfume experience available in Lebanon.
-                  Providing high standards Fine Fragrance complexity but made especially
-                  to match your taste and personality.
+                  Available upon request: Birthday party, Graduation celebration,
+                  Bachelorette and a variety of other options that you could have in mind.
+               </Typography>
+               <Typography variant="h3">
+                  P.S: It is important to plan these events ahead of time so make sure to
+                  contact us for more details and booking at least a month ahead of your
+                  desired date.
                </Typography>
             </div>
          </ThemeProvider>
@@ -54,4 +55,4 @@ function CreativePerfumeLabs() {
    );
 }
 
-export default CreativePerfumeLabs;
+export default Private;

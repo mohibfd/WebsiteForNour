@@ -158,7 +158,17 @@ function App() {
                Luxury Store
             </Typography>
             <Typography variant="h4">
-               Creative Perfume Lab and Workshops (Themed and Private)
+               <Link display="inline" variant="inherit" to="/CreativePerfumeLab">
+                  {"Creative Perfume Lab "}
+               </Link>
+               and Workshops
+               <Link display="inline" variant="inherit" to="/Themed">
+                  {" (Themed "}
+               </Link>
+               and
+               <Link display="inline" variant="inherit" to="/Private">
+                  {" Private)"}
+               </Link>
             </Typography>
             <Typography variant="h5" className={classes.littleSpace}>
                Triple Perfumery Master degree
@@ -170,12 +180,7 @@ function App() {
             </Typography>
             <div className={classes.numbersContainer}>
                <div className={classes.numbers}>
-                  <Typography
-                     variant="body1"
-                     // className={classes.number}
-                  >
-                     +33 7 67 85 55 41
-                  </Typography>
+                  <Typography variant="body1">+33 7 67 85 55 41</Typography>
                   <Typography variant="body1">+961 6 412 024</Typography>
                   <Typography variant="body1">+961 81 157 395</Typography>
                </div>
@@ -190,7 +195,9 @@ function App() {
                   <div className={classes.littleSpace} />
 
                   <Typography variant="body2" color={"secondary"}>
-                     Nour Akoum
+                     <Link display="inline" variant="inherit" to="/NourAkoum">
+                        Nour Akoum{" "}
+                     </Link>
                   </Typography>
                </div>
                <img src={starIcon} className={classes.star} alt="" />
