@@ -152,21 +152,41 @@ function App() {
             </div>
 
             <Typography variant="h3">
-               <Link display="inline" variant="inherit" to="/CustomizedFragrances">
+               <Link
+                  display="inline"
+                  variant="inherit"
+                  to="/CustomizedFragrances"
+                  style={{ color: "#000" }}
+               >
                   {"Customized Fragrances "}
                </Link>
                Luxury Store
             </Typography>
             <Typography variant="h4">
-               <Link display="inline" variant="inherit" to="/CreativePerfumeLab">
+               <Link
+                  display="inline"
+                  variant="inherit"
+                  to="/CreativePerfumeLab"
+                  style={{ color: "#000" }}
+               >
                   {"Creative Perfume Lab "}
                </Link>
                and Workshops
-               <Link display="inline" variant="inherit" to="/Themed">
+               <Link
+                  display="inline"
+                  variant="inherit"
+                  to="/Themed"
+                  style={{ color: "#000" }}
+               >
                   {" (Themed "}
                </Link>
                and
-               <Link display="inline" variant="inherit" to="/Private">
+               <Link
+                  display="inline"
+                  variant="inherit"
+                  to="/Private"
+                  style={{ color: "#000" }}
+               >
                   {" Private)"}
                </Link>
             </Typography>
@@ -195,8 +215,13 @@ function App() {
                   <div className={classes.littleSpace} />
 
                   <Typography variant="body2" color={"secondary"}>
-                     <Link display="inline" variant="inherit" to="/NourAkoum">
-                        Nour Akoum{" "}
+                     <Link
+                        display="inline"
+                        variant="inherit"
+                        to="/NourAkoum"
+                        style={{ color: "#ff1493" }}
+                     >
+                        Nour Akoum
                      </Link>
                   </Typography>
                </div>
@@ -252,7 +277,6 @@ function App() {
                   </Typography>
                </div>
                <img src={starIcon} className={classes.smallStarTwo} alt="" />
-
                {containerOne()}
                <div className={classes.bigSpace} />
                {containerTwo()}
