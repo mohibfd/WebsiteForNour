@@ -1,14 +1,16 @@
 import { createTheme, ThemeProvider, makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
-import Grid from "./components/Grid";
-import nourIcon from "./nourIcon.jpg";
-import starIcon from "./Star.png";
+import Grid from "../components/Grid";
+import nourIcon from "../nourIcon.jpg";
+import starIcon from "../Star.png";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
-import "./App.css";
+import "../App.css";
+
+console.log("??");
 
 const theme = createTheme({
    palette: {
@@ -125,7 +127,7 @@ const styles = makeStyles({
    },
 });
 
-function App() {
+function CustomizedFragrances() {
    const classes = styles();
 
    const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -151,12 +153,7 @@ function App() {
                </Typography>
             </div>
 
-            <Typography variant="h3">
-               <Link display="inline" variant="inherit" to="/CustomizedFragrances">
-                  {"Customized Fragrances "}
-               </Link>
-               Luxury Store
-            </Typography>
+            <Typography variant="h3">Customized Fragrances Luxury Store</Typography>
             <Typography variant="h4">
                Creative Perfume Lab and Workshops (Themed and Private)
             </Typography>
@@ -208,6 +205,11 @@ function App() {
             <Typography variant="h4">Tripoli, Lebanon</Typography>
             <Typography variant="h4">nourakoumparfumeur@gmail.com</Typography>
             <div className={classes.littleSpace} />
+            <a href="/ contactus">Go to Details</a>
+
+            <li>
+               <Link to="/ contactus ">Contact</Link>
+            </li>
 
             <Typography variant="h4">Always Smell and Smile!</Typography>
             <div className={`${classes.grid} ${classes.littleSpace}`}>
@@ -232,7 +234,7 @@ function App() {
       );
    };
    return (
-      <div className="App">
+      <div className="CustomizedFragrances">
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <img src={starIcon} className={classes.smallStarOne} alt="" />
@@ -248,11 +250,11 @@ function App() {
 
                {containerOne()}
                <div className={classes.bigSpace} />
-               {containerTwo()}
+               {/* {containerTwo()} */}
             </div>
          </ThemeProvider>
       </div>
    );
 }
 
-export default App;
+export default CustomizedFragrances;
