@@ -3,14 +3,24 @@ import { Typography } from "@material-ui/core";
 import { useMediaQuery } from "react-responsive";
 
 import "../App.css";
-
 const theme = createTheme({
+   palette: {
+      secondary: {
+         main: "#ff1493",
+      },
+   },
    typography: {
       fontFamily: ["PT Serif"],
       h3: {
          fontWeight: 400,
          fontSize: "2.4rem",
          lineHeight: "3.5rem",
+      },
+      body2: {
+         fontFamily: ["Fleur De Leah"],
+         fontWeight: 250,
+         fontSize: "4rem",
+         lineHeight: "2.5rem",
       },
    },
 });
@@ -22,6 +32,10 @@ const styles = makeStyles({
       width: "75%",
       margin: "auto",
       marginTop: "5%",
+   },
+   header: {
+      textAlign: "center",
+      padding: "2%",
    },
 });
 
@@ -40,6 +54,9 @@ function NourAkoum() {
       <div className="NourAkoum">
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
+               <Typography variant="body2" color={"secondary"} className={classes.header}>
+                  Nour Akoum
+               </Typography>
                <Typography variant="h3">
                   {
                      "French & Lebanese independent Perfumer and part of the French Society of Perfumers. After having her B.S in Chemistry, she studied European Fragrance & Cosmetics Masters at ISIPCA in Paris, where it also included an MBM degree from the University of Padova, Italy and a Scientific perfumery Master from the University of Versailles, France. Her masters had three different diplomas, Scientific, Technical, and Business management all in the Fragrance industry. She’s also really passionate about fashion and style, and acquired a Fashion Design Professional course Certificate in Milan."

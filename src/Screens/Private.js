@@ -5,12 +5,23 @@ import { useMediaQuery } from "react-responsive";
 import "../App.css";
 
 const theme = createTheme({
+   palette: {
+      secondary: {
+         main: "#ff1493",
+      },
+   },
    typography: {
       fontFamily: ["PT Serif"],
       h3: {
          fontWeight: 400,
          fontSize: "2.4rem",
          lineHeight: "3.5rem",
+      },
+      body2: {
+         fontFamily: ["Fleur De Leah"],
+         fontWeight: 250,
+         fontSize: "4rem",
+         lineHeight: "2.5rem",
       },
    },
 });
@@ -22,6 +33,10 @@ const styles = makeStyles({
       width: "75%",
       margin: "auto",
       marginTop: "5%",
+   },
+   header: {
+      textAlign: "center",
+      padding: "2%",
    },
 });
 
@@ -40,6 +55,9 @@ function Private() {
       <div className="Private">
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
+               <Typography variant="body2" color={"secondary"} className={classes.header}>
+                  Private
+               </Typography>
                <Typography variant="h3">
                   Available upon request: Birthday party, Graduation celebration,
                   Bachelorette and a variety of other options that you could have in mind.

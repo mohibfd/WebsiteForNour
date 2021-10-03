@@ -67,8 +67,6 @@ const styles = makeStyles({
    },
    wrapperOne: {
       border: "2px solid #00BFFF",
-      // width: "100%",
-      // margin: "auto",
       padding: "1%",
    },
    bigSpace: {
@@ -101,16 +99,13 @@ const styles = makeStyles({
       flex: 1,
       marginRight: "6rem",
    },
-   numbersContainer: {
+   footerContainer: {
       display: "flex",
       marginTop: "2%",
    },
-   numbers: {
-      width: "15rem",
-   },
    txtNextToNums: {
       flex: 1,
-      marginRight: "10rem",
+      marginLeft: "6rem",
       padding: "0.5rem 0 0 0",
    },
    smallStarOne: {
@@ -122,6 +117,9 @@ const styles = makeStyles({
       width: "2rem",
       height: "2rem",
       marginLeft: "28rem",
+   },
+   numbers: {
+      margin: "1%",
    },
 });
 
@@ -198,12 +196,7 @@ function App() {
             <Typography variant="h5">
                Member of the French Society of Perfumers
             </Typography>
-            <div className={classes.numbersContainer}>
-               <div className={classes.numbers}>
-                  <Typography variant="body1">+33 7 67 85 55 41</Typography>
-                  <Typography variant="body1">+961 6 412 024</Typography>
-                  <Typography variant="body1">+961 81 157 395</Typography>
-               </div>
+            <div className={classes.footerContainer}>
                <div className={classes.txtNextToNums}>
                   <Typography
                      variant="body2"
@@ -239,9 +232,32 @@ function App() {
             <Typography variant="h4">{"Akoum & Jamal blg, Dam w Farz"}</Typography>
             <Typography variant="h4">Tripoli, Lebanon</Typography>
             <Typography variant="h4">nourakoumparfumeur@gmail.com</Typography>
+            <Typography variant="body1" display="inline" className={classes.numbers}>
+               +33 7 67 85 55 41
+            </Typography>
+            <Typography variant="body1" display="inline" className={classes.numbers}>
+               +961 6 412 024
+            </Typography>
+            <Typography variant="body1" display="inline" className={classes.numbers}>
+               +961 81 157 395
+            </Typography>
             <div className={classes.littleSpace} />
 
-            <Typography variant="h4">Always Smell and Smile!</Typography>
+            <Typography variant="body2" display="inline">
+               Always{" "}
+            </Typography>
+            <Typography variant="body2" color={"secondary"} display="inline">
+               Smell{" "}
+            </Typography>
+            <Typography variant="body2" display="inline">
+               and{" "}
+            </Typography>
+            <Typography variant="body2" color={"primary"} display="inline">
+               Smile
+            </Typography>
+            <Typography variant="body2" display="inline">
+               !
+            </Typography>
             <div className={`${classes.grid} ${classes.littleSpace}`}>
                <Grid
                   icon={
