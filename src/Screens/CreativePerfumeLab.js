@@ -73,7 +73,8 @@ function CreativePerfumeLabs() {
                   knowledgeable, Innovative, Creative and a Unique activity.
                </Typography>
                <Typography variant="h3">
-                  Hurry up and join us in our only perfume Lab open for public in the MEA.
+                  Hurry up and join us in our only perfume Lab open for public in the
+                  Middle East.
                </Typography>
             </div>
          </ThemeProvider>
