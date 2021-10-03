@@ -56,7 +56,7 @@ function CreativePerfumeLabs() {
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <Typography variant="body2" color={"secondary"} className={classes.header}>
-                  Customized Fragrances
+                  Customized Fine Fragrances
                </Typography>
                <Typography variant="h3">
                   A chance to get your unique signature fine fragrance that reflects your

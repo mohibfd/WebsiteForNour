@@ -56,7 +56,7 @@ function Themed() {
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <Typography variant="body2" color={"secondary"} className={classes.header}>
-                  Themed
+                  Themed Perfumery Workshops
                </Typography>
                <Typography variant="h3">
                   There are special themed workshops based on different seasons and

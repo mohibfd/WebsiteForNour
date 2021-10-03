@@ -56,7 +56,7 @@ function Private() {
          <ThemeProvider theme={theme}>
             <div className={classes.wrapper}>
                <Typography variant="body2" color={"secondary"} className={classes.header}>
-                  Private
+                  Private Perfumery Workshops
                </Typography>
                <Typography variant="h3">
                   Available upon request: Birthday party, Graduation celebration,
