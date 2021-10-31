@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider, makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import Grid from "./components/Grid";
+import ButtonMailTo from "./components/ButtonMailTo";
 import nourIcon from "./nourIcon.jpg";
 import starIcon from "./Star.png";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -224,6 +225,10 @@ function App() {
       );
    };
 
+   const phoneNumOne = "+33 7 67 85 55 41";
+   const phoneNumTwo = "+961 6 412 024";
+   const phoneNumThree = "+961 81 157 395";
+
    const containerTwo = () => {
       return (
          <div className={`${classes.wrapper} ${classes.wrapperOne}`}>
@@ -231,15 +236,21 @@ function App() {
 
             <Typography variant="h4">{"Akoum & Jamal blg, Dam w Farz"}</Typography>
             <Typography variant="h4">Tripoli, Lebanon</Typography>
-            <Typography variant="h4">nourakoumparfumeur@gmail.com</Typography>
+            <Typography variant="h4">
+               <ButtonMailTo
+                  label="nourakoumparfumeur@gmail.com"
+                  mailto="mailto:nourakoumparfumeur@gmail.com"
+               />
+            </Typography>
+
             <Typography variant="body1" display="inline" className={classes.numbers}>
-               +33 7 67 85 55 41
+               <a href={`tel:${phoneNumOne}`}> {phoneNumOne} </a>
             </Typography>
             <Typography variant="body1" display="inline" className={classes.numbers}>
-               +961 6 412 024
+               <a href={`tel:${phoneNumTwo}`}> {phoneNumTwo} </a>
             </Typography>
             <Typography variant="body1" display="inline" className={classes.numbers}>
-               +961 81 157 395
+               <a href={`tel:${phoneNumThree}`}> {phoneNumThree} </a>
             </Typography>
             <div className={classes.littleSpace} />
 
@@ -266,6 +277,7 @@ function App() {
                      />
                   }
                   title="@nourakoumparfumeur"
+                  link="https://www.instagram.com/nourakoumparfumeur/"
                />
                <Grid
                   icon={
@@ -274,6 +286,7 @@ function App() {
                      />
                   }
                   title="@nourakoumparfumeur"
+                  link="https://www.facebook.com/nourakoumparfumeur/"
                />
             </div>
          </div>
