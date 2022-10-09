@@ -24,39 +24,39 @@ const theme = createTheme({
       fontFamily: ["PT Serif"],
       h1: {
          fontWeight: 800,
-         fontSize: "4rem",
+         fontSize: "3.5rem",
          lineHeight: "5.5rem",
       },
       h2: {
          fontWeight: 600,
-         fontSize: "3rem",
+         fontSize: "2.5rem",
          lineHeight: "4.5rem",
       },
       h3: {
          fontWeight: 400,
-         fontSize: "2.4rem",
+         fontSize: "2rem",
          lineHeight: "3.5rem",
       },
       h4: {
          fontWeight: 250,
-         fontSize: "2rem",
+         fontSize: "1.5rem",
          lineHeight: "2.5rem",
       },
       h5: {
          fontWeight: 100,
-         fontSize: "1.7rem",
+         fontSize: "1.2rem",
          lineHeight: "2rem",
       },
       body1: {
          fontFamily: ["Open Sans"],
          fontWeight: 250,
-         fontSize: "1.75rem",
+         fontSize: "1.25rem",
          lineHeight: "2.5rem",
       },
       body2: {
          fontFamily: ["Fleur De Leah"],
          fontWeight: 250,
-         fontSize: "3rem",
+         fontSize: "2.5rem",
          lineHeight: "2.5rem",
       },
    },
@@ -83,8 +83,8 @@ const styles = makeStyles({
       flexWrap: "wrap",
    },
    logo: {
-      width: "25%",
-      height: "25%",
+      width: "20%",
+      height: "20%",
    },
    italic: {
       marginLeft: "50",
@@ -273,7 +273,7 @@ function App() {
                <Grid
                   icon={
                      <InstagramIcon
-                        style={{ fill: "#ff1493", height: "125", width: "125" }}
+                        style={{ fill: "#ff1493", height: "100", width: "100" }}
                      />
                   }
                   title="@nourakoumparfumeur"
@@ -282,7 +282,7 @@ function App() {
                <Grid
                   icon={
                      <FacebookIcon
-                        style={{ fill: "#00BFFF", height: "125", width: "125" }}
+                        style={{ fill: "#00BFFF", height: "100", width: "100" }}
                      />
                   }
                   title="@nourakoumparfumeur"
