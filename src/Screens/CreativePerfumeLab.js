@@ -14,13 +14,13 @@ const theme = createTheme({
       fontFamily: ["PT Serif"],
       h3: {
          fontWeight: 400,
-         fontSize: "2.4rem",
+         fontSize: "1.5rem",
          lineHeight: "3.5rem",
       },
       body2: {
          fontFamily: ["Fleur De Leah"],
          fontWeight: 250,
-         fontSize: "4rem",
+         fontSize: "3rem",
          lineHeight: "2.5rem",
       },
    },
